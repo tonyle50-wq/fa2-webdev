@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+body {
+  font-family: Arial, open-sans;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+
+.header-text {
+  text-align: center;
+  padding: 32px 16px;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333333;
+  position: relative;
+}
+
+.title-logo {
+  height: 60px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.main-title {
+  font-family: 'Caveat', cursive;
+  font-size: 64px;
+  color: #e63946;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.address {
+  font-family: 'Georgia', serif;
+  margin-top: 8px;
+  color: #cccccc;
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #e63946;
+} 
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  color: #e63946;
+}
+
+.nav-links a.active {
+  background-color: #aa0404; 
+  color: #ffffff;             
+}
+
+.title {
+  color: #e63946; 
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 16px 20px;
+  margin-top: 15px;
+  background-color: #fafafa;
+  border-left: 5px solid #e63946;
+  border-radius: 0 6px 6px 0;
+}
+
+.hours-list li {
+  display: flex;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #555555;
+}
+
+.hours-list li span {
+  font-weight: bold;
+  color: #111111;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.location{
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.photo-row {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.photo-row img {
+  flex: 1;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
